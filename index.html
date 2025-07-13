@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i18nify - Traduction Automatique de Projets Developers | Internationalisation Simplifiée</title>
+    <meta name="description" content="i18nify est la plateforme de traduction intelligente pour développeurs. Traduisez automatiquement vos projets web et applications en plusieurs langues avec une précision inégalée.">
+    <meta name="keywords" content="traduction automatique, i18n, internationalisation, localisation, traduction projet, traduction code, traduction développeur, multilangue, react i18n, vue i18n, nextjs i18n">
+    <meta name="author" content="i18nify">
+    <link rel="canonical" href="https://i18nify.online">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://i18nify.online">
+    <meta property="og:title" content="i18nify - Traduction Automatique de Projets Developers">
+    <meta property="og:description" content="Solution complète d'internationalisation pour vos projets web. Traduction automatique avec contrôle humain.">
+    <meta property="og:image" content="https://i18nify.online/images/social-preview.jpg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://i18nify.online">
+    <meta property="twitter:title" content="i18nify - Traduction Automatique de Projets Developers">
+    <meta property="twitter:description" content="Solution complète d'internationalisation pour vos projets web. Traduction automatique avec contrôle humain.">
+    <meta property="twitter:image" content="https://i18nify.online/images/social-preview.jpg">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": "i18nify",
+        "description": "Plateforme de traduction automatique pour l'internationalisation de projets web et applications",
+        "url": "https://i18nify.online",
+        "applicationCategory": "DeveloperTools",
+        "operatingSystem": "Web",
+        "offers": {
+            "@type": "Offer",
+            "category": "SaaS",
+            "price": "9",
+            "priceCurrency": "EUR"
+        },
+        "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "reviewCount": "124"
+        }
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+    <div class="nav-container">
+        <div class="nav-logo">
+            <div class="logo-icon">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <!-- Fond avec gradient -->
+                  <rect width="32" height="32" rx="8" fill="url(#logoGradient)"/>
+                  
+                  <!-- Nouvelle icône Languages centrée -->
+                  <g transform="translate(4, 4)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="m5 8 6 6"></path>
+                      <path d="m4 14 6-6 2-3"></path>
+                      <path d="M2 5h12"></path>
+                      <path d="M7 2h1"></path>
+                      <path d="m22 22-5-10-5 10"></path>
+                      <path d="M14 18h6"></path>
+                  </g>
+                  
+                  <!-- Définition du gradient (identique à l'original) -->
+                  <defs>
+                      <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                          <stop offset="0%" style="stop-color:#007bff"/>
+                          <stop offset="100%" style="stop-color:#00c851"/>
+                      </linearGradient>
+                  </defs>
+              </svg>
+            </div>
+            <span class="logo-text">i18nify</span>
+        </div>
+        
+        <div class="nav-menu">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#workflow" class="nav-link">Workflow</a>
+            <a href="#pricing" class="nav-link">Pricing</a>
+            <a href="#faq" class="nav-link">FAQ</a>
+            <a href="#about" class="nav-link">About</a>
+        </div>
+        
+        <div class="nav-actions">
+            <a href="https://app.i18nify.online" class="btn btn-primary">Free trial</a>
+        </div>
+        
+        <button class="mobile-menu-toggle" aria-label="Menu mobile">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg">
+            <div class="gradient-orb orb-1"></div>
+            <div class="gradient-orb orb-2"></div>
+            <div class="gradient-orb orb-3"></div>
+        </div>
+        
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-badge">
+                        <span>New</span>
+                        <span>Advanced translation AI</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Internationalize your projects 
+                        <span class="gradient-text">in a few clicks</span>
+                    </h1>
+                    
+                    <p class="hero-subtitle">
+                        i18nify automatise la traduction de vos applications et sites web avec une précision inégalée.
+                        Passez du prototype à multilingue en minutes, pas en jours.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="https://app.i18nify.online/register" class="btn-primary btn-large">
+                            <span>Start for free</span>
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                                <path d="M4.17 11L7.17 8L4.17 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                                <path d="M10 8H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            </svg>
+                        </a>
+                        
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <span class="stat-number">100+</span>
+                            <span class="stat-label">Languages supported</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">10K+</span>
+                            <span class="stat-label">Projects translated</span>
+                        </div>
+                        <div class="stat-item">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">Satisfaction rate</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <img src="image.png" alt="Interface de traduction i18nify montrant le translation workflow" class="hero-image" loading="lazy">
+                    <div class="floating-card card-1">
+                        <div class="card-header">
+                            <div class="card-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="code-line">
+                                <span class="code-key">"welcome":</span>
+                                <span class="code-value">"Welcome"</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-key">"hello":</span>
+                                <span class="code-value">"Hello"</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="floating-card card-3">
+                        <div class="card-header">
+                            <div class="card-dots">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="card-content">
+                            <div class="code-line">
+                                <span class="code-key">"welcome":</span>
+                                <span class="code-value">"Welcome"</span>
+                            </div>
+                            <div class="code-line">
+                                <span class="code-key">"hello":</span>
+                                <span class="code-value">"Hello"</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Badges -->
+    <section class="trust-badges">
+        <div class="container">
+            <p class="trust-title">Recognized and used by teams around the world</p>
+            <div class="trust-logos">
+                <span>TechStars</span>
+                <span>Y Combinator</span>
+                <span>GitHub</span>
+                <span>Microsoft for Startups</span>
+                <span>Google Cloud</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Workflow Section -->
+    <section id="workflow" class="workflow-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Intelligent Workflow</h2>
+                <p class="section-subtitle">
+                    Our 4-step process simplifies the internationalization of your projects
+                </p>
+            </div>
+            
+            <div class="workflow-steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Import your project</h3>
+                    <p>From GitHub, GitLab or by uploading your files directly</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Automatic analysis</h3>
+                    <p>Detection of texts to be translated and context suggestions</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>AI Translation</h3>
+                    <p>Generation of accurate translations with our specialized AI engine</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>Export</h3>
+                    <p>Download or push directly to your Git repository</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Features designed for developers</h2>
+                <p class="section-subtitle">
+                    Everything you need for frictionless internationalization
+                </p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4L20 12L28 12L22 18L24 26L16 22L8 26L10 18L4 12L12 12L16 4Z" fill="currentColor"/>
+                        </svg>
+                    </div>
+                    <h3>Contextual AI</h3>
+                    <p>Our AI analyzes the context of your code for more accurate translations.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 2L26 8V24L16 30L6 24V8L16 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M16 2V30" stroke="currentColor" stroke-width="2"/>
+                            <path d="M6 8L26 24" stroke="currentColor" stroke-width="2"/>
+                            <path d="M26 8L6 24" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>100+ Languages</h3>
+                    <p>Complete support for all major and regional languages.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 8L8 16L16 24L24 16L16 8Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M16 12V20" stroke="currentColor" stroke-width="2"/>
+                            <path d="M12 16H20" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Git Integration</h3>
+                    <p>Direct import/export from/to GitHub, GitLab and others.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M4 8H28V24H4V8Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                            <path d="M4 8L16 16L28 8" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Powerful API</h3>
+                    <p>Automate your workflows with our comprehensive REST API.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 4V28M4 16H28" stroke="currentColor" stroke-width="2"/>
+                            <path d="M8 8L24 24M24 8L8 24" stroke="currentColor" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <h3>Collaboration</h3>
+                    <p>Invite your team and work together on translations.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+                            <path d="M16 2L20 12L30 12L22 18L26 28L16 22L6 28L10 18L2 12L12 12L16 2Z" stroke="currentColor" stroke-width="2" fill="none"/>
+                        </svg>
+                    </div>
+                    <h3>Premium Quality</h3>
+                    <p>Automated quality control and human review available.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <div class="demo-content">
+                <div class="demo-text">
+                    <h2 class="section-title">See i18nify in action</h2>
+                    <p class="section-subtitle">
+                        Discover how i18nify can transform your internationalization workflow in less than 2 minutes.
+                    </p>
+                    <ul class="demo-features">
+                        <li>Automatic text detection</li>
+                        <li>Contextual translation</li>
+                        <li>Export to your Git repository</li>
+                        <li>Developer-friendly interface</li>
+                    </ul>
+                    <a href="https://app.i18nify.online/" class="btn-primary btn-sm" style="width: 180px;">
+                        <span>Try for free</span>
+                    </a>
+                </div>
+                <div class="demo-video">
+                    <div class="video-placeholder">
+                        <img src="/image.png" alt="Capture d'écran de l'interface i18nify" loading="lazy">
+                        <button class="play-button">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                <path d="M5 3L19 12L5 21V3Z" fill="currentColor"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="pricing-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Simple and transparent pricing</h2>
+                <p class="section-subtitle">
+                    Choose the plan that suits your needs. Upgrade or downgrade at any time.
+                </p>
+            </div>
+            
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Starter</h3>
+                    <div class="price">Free</div>
+                    <p>Perfect for testing the platform</p>
+                    <ul>
+                        <li>1 active project</li>
+                        <li>1 target language</li>
+                        <li>Basic automatic translation</li>
+                        <li>Community support</li>
+                    </ul>
+                    <a href="https://app.i18nify.online/register" class="btn-outline btn-sm">Get started</a>
+                </div>
+                
+                <div class="pricing-card featured">
+                    <div class="popular-badge">Most popular</div>
+                    <h3>Pro</h3>
+                    <div class="price">9€ <span>/month</span></div>
+                    <p>For developers and small teams</p>
+                    <ul>
+                        <li>5 active projects</li>
+                        <li>5 target languages</li>
+                        <li>Advanced AI translation</li>
+                        <li>GitHub integration</li>
+                        <li>Priority support</li>
+                    </ul>
+                    <a href="https://app.i18nify.online/register" class="btn-primary btn-sm text-center">Try for free</a>
+                </div>
+                
+                <div class="pricing-card">
+                    <h3>Team</h3>
+                    <div class="price">29€ <span>/month</span></div>
+                    <p>For teams and agencies</p>
+                    <ul>
+                        <li>Unlimited projects</li>
+                        <li>Unlimited languages</li>
+                        <li>Premium AI translation</li>
+                        <li>Integrated CI/CD</li>
+                        <li>Dedicated support</li>
+                    </ul>
+                    <a href="https://app.i18nify.online/register" class="btn-outline btn-sm">Try for free</a>
+                </div>
+            </div>
+            
+            <div class="pricing-footer">
+                <p>Need a custom plan for your business? <a href="#contact">Contact us</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">They trust us</h2>
+                <p class="section-subtitle">
+                    Thousands of developers and companies use i18nify for their international projects
+                </p>
+            </div>
+            
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"i18nify has reduced our internationalization time by 80%. What used to take weeks now takes a few hours."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Marie D." loading="lazy">
+                        </div>
+                        <div class="author-info">
+                            <h4>Marie D.</h4>
+                            <p>CTO @StartupTech</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"The quality of the translations is impressive, especially for technical terms. Our international team is delighted."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Pierre L." loading="lazy">
+                        </div>
+                        <div class="author-info">
+                            <h4>Pierre L.</h4>
+                            <p>Lead Dev @AgencyX</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"GitHub integration is a game-changer. We can now manage translations directly in our workflow."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Sophie M." loading="lazy">
+                        </div>
+                        <div class="author-info">
+                            <h4>Sophie M.</h4>
+                            <p>Product Manager @SaaSCompany</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked Questions</h2>
+                <p class="section-subtitle">
+                    Everything you need to know about i18nify
+                </p>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-card">
+                    <h3>What types of projects can I translate?</h3>
+                    <p>i18nify supports web projects (React, Vue, Angular, Next.js, etc.), mobile applications (React Native, Flutter) and any project containing translation files (JSON, YAML, etc.).</p>
+                </div>
+                
+                <div class="faq-card">
+                    <h3>How does automatic translation work?</h3>
+                    <p>Our specialized AI analyzes your code to understand the context before generating translations. You can then adjust them manually if necessary.</p>
+                </div>
+                
+                <div class="faq-card">
+                    <h3>Can I collaborate with my team?</h3>
+                    <p>Yes, Pro and Team plans allow you to invite team members to work together on translations with roles and permissions.</p>
+                </div>
+                
+                <div class="faq-card">
+                    <h3>What is the quality of the translations?</h3>
+                    <p>Our translations are more accurate than generic solutions thanks to contextual analysis. For critical projects, we recommend human review.</p>
+                </div>
+                
+                <div class="faq-card">
+                    <h3>How does the free trial work?</h3>
+                    <p>The free trial gives you access to all Pro features for 14 days, with no commitment.</p>
+                </div>
+                
+                <div class="faq-card">
+                    <h3>Can I cancel at any time?</h3>
+                    <p>Absolutely. You can cancel your subscription at any time without fees or conditions.</p>
+                </div>
+            </div>
+            
+            <div class="faq-cta">
+                <p>Do you have any other questions? <a href="#contact">Contact our team</a></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Our mission</h2>
+                    <p>i18nify was born from the founders' frustration with existing internationalization tools. As former developers, we know how time-consuming and error-prone translation management can be.</p>
+                    <p>Our goal is to provide a solution that seamlessly integrates the translation process into the development workflow, without sacrificing quality or control.</p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <div class="stat-number">2025</div>
+                            <div class="stat-label">Year of creation</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">10K+</div>
+                            <div class="stat-label">Developers</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">5</div>
+                            <div class="stat-label">Countries</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1579389083078-4e7018379f7e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="Équipe i18nify" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="cta-bg">
+            <div class="gradient-orb orb-4"></div>
+            <div class="gradient-orb orb-5"></div>
+        </div>
+        
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">
+                    Ready to revolutionize your 
+                    <span class="gradient-text">translation workflow</span> ?
+                </h2>
+                <p class="cta-subtitle">
+                    Rejoignez plus de 10 000 développeurs qui font confiance à i18nify 
+                    pour leurs projets internationaux.
+                </p>
+                <div class="cta-actions">
+                    <a href="https://app.i18nify.online/register" class="btn-primary btn-large">
+                        <span>Start for free</span>
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
+                            <path d="M4.17 11L7.17 8L4.17 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                            <path d="M10 8H16" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                        </svg>
+                    </a>
+                    <a href="#contact" class="btn-outline btn-large">
+                        <span>Talk to an expert</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact us</h2>
+                <p class="section-subtitle">
+                    We are here to answer all your questions
+                </p>
+            </div>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <h3>Support</h3>
+                        <p><a href="mailto:support@i18nify.online">support@i18nify.online</a></p>
+                        <p>Response within 24 hours</p>
+                    </div>
+                    
+                    <div class="info-card">
+                        <h3>Social networks</h3>
+                        <div class="social-links">
+                            <a href="https://discord.gg/i18nify" target="_blank">Discord</a>
+                            <a href="https://github.com/i18nify" target="_blank">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" placeholder="Votre nom">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Votre email">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <select id="subject">
+                            <option value="">Select a subject</option>
+                            <option value="support">Technical support</option>
+                            <option value="sales">Sales request</option>
+                            <option value="partnership">Partnership</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" rows="5" placeholder="Votre message"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn-primary btn-sm">Send message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <div class="logo-icon">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <!-- Fond avec gradient -->
+                              <rect width="32" height="32" rx="8" fill="url(#logoGradient)"/>
+                              
+                              <!-- Nouvelle icône Languages centrée -->
+                              <g transform="translate(4, 4)" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                  <path d="m5 8 6 6"></path>
+                                  <path d="m4 14 6-6 2-3"></path>
+                                  <path d="M2 5h12"></path>
+                                  <path d="M7 2h1"></path>
+                                  <path d="m22 22-5-10-5 10"></path>
+                                  <path d="M14 18h6"></path>
+                              </g>
+                              
+                              <!-- Définition du gradient (identique à l'original) -->
+                              <defs>
+                                  <linearGradient id="logoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                      <stop offset="0%" style="stop-color:#007bff"/>
+                                      <stop offset="100%" style="stop-color:#00c851"/>
+                                  </linearGradient>
+                              </defs>
+                          </svg>
+                        </div>
+                        <span class="logo-text">i18nify</span>
+                    </div>
+                    <p class="footer-description">
+                        La plateforme de traduction automatique qui révolutionne 
+                        l'internationalisation de vos projets.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#pricing">Pricing</a></li>
+                        <li><a href="#demo">Demo</a></li>
+                        <li><a href="#roadmap">Roadmap</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="https://vitetonext.codebypaki.online/">ViteToNext</a></li>
+                        <li><a href="https://codebypaki.online/blog">Blog</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#careers">Careers</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#press">Press</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#privacy">Privacy</a></li>
+                        <li><a href="#terms">Terms</a></li>
+                        <li><a href="#cookies">Cookies</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="footer-legal">
+                    <p>&copy; 2025 i18nify. Tous droits réservés.</p>
+                    <div class="footer-links">
+                        <a href="#privacy">Privacy</a>
+                        <a href="#terms">Terms</a>
+                        <a href="#cookies">Cookies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-toggle').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav-menu').classList.toggle('active');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+    <script>
+document.getElementById('contactForm').addEventListener('submit', async function (e) {
+  e.preventDefault();
+
+  const form = e.target;
+  const formData = new FormData(form);
+  const messageEl = document.getElementById('formMessage');
+
+  messageEl.textContent = "Envoi en cours...";
+
+  try {
+    const response = await fetch('/sendmail.php', {
+      method: 'POST',
+      body: formData
+    });
+
+    const result = await response.json();
+
+       if (response.ok) {
+      messageEl.textContent = "✅ Message envoyé avec succès.";
+      messageEl.className = "text-green-600 mt-2";
+      form.reset();
+    } else {
+        let error=result.error
+      messageEl.textContent = "❌ Erreur : " + error;
+      messageEl.className = "text-red-600 mt-2";
+    }
+  } catch (err) {
+    messageEl.textContent = "❌ Une erreur est survenue.";
+    messageEl.className = "text-red-600 mt-2";
+  }
+});
+</script>
+</body>
+</html>
